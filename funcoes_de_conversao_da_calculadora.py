@@ -42,6 +42,14 @@ def tb_para_gb(numero_inserido):
     gb_calculado = numero_inserido * CONSTANTE_DE_CONVERSAO
     return gb_calculado
 
+def tb_para_pb(numero_inserido):
+    pb_calculado = numero_inserido / CONSTANTE_DE_CONVERSAO
+    return pb_calculado
+
+def pb_para_tb(numero_inserido):
+    tb_calculado = numero_inserido * CONSTANTE_DE_CONVERSAO
+    return tb_calculado
+
 #prints das conversões acima:
 
 print('Insira o valor a ser convertido de bit para Byte:')
@@ -92,4 +100,14 @@ print('Valor convertido:', valor_convertido)
 print('Insira o valor a ser convertido de Terabyte para Gigabyte:')
 numero_inserido = float(input())
 valor_convertido = tb_para_gb(numero_inserido)
+print('Valor convertido:', valor_convertido)
+
+print('Insira o valor a ser convertido de Terabyte para Petabyte:')
+numero_inserido = float(input())
+valor_convertido = tb_para_pb(numero_inserido)
+print('Valor convertido:', valor_convertido)
+
+print('Insira o valor a ser convertido de Petabyte para Terabyte:')
+numero_inserido = float(input())
+valor_convertido = pb_para_tb(numero_inserido)
 print('Valor convertido:', valor_convertido)
