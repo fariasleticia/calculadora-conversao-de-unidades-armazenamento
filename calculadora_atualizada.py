@@ -22,3 +22,15 @@ else:
     posicao_fnl = unidades_de_armazenamento.index(unidade_final)
 
 numero_inserido = int(input("Valor a ser convertido: "))
+
+#conversao do valor inserido
+def calculo_conversao():
+    if posicao_inc >= posicao_fnl:
+        distancia = posicao_inc - posicao_fnl
+        resultado = numero_inserido * (VALOR_CONV_PRINCIPAL**distancia)
+    elif posicao_inc < posicao_fnl:
+        distancia = posicao_fnl - posicao_inc
+        resultado = numero_inserido / (VALOR_CONV_PRINCIPAL**distancia)
+    print('\nOkay. Seu resultado é:', resultado, str(unidade_final) + '(s)')
+
+calculo_conversao()
